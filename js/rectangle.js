@@ -1,13 +1,25 @@
 // Triangle calculation  
+// let serial = 0;
+// document.getElementById('cart-rectangle').addEventListener('click', function(){
+//     serial += 1;
 
-const input1 = document.getElementById("triangle-value1");
-const input2 = document.getElementById("triangle-value2");
-const output1 = document.getElementById("triangle-aree1");
-const output2 = document.getElementById("triangle-area2");
+//     console.log('button pressed ')
+
+// })
+
+// const rectangleText1 = document.getElementById('rectangle-aree1')
+// const rectangleText2 = document.getElementById('rectangle-aree2')
+// const rectangleValue1 = document.getElementById('rectangle-value1')
+// const rectangleValue2 = document.getElementById('rectangle-value2')
+
+
+
+const output2 = document.getElementById("rectangle-area2");
 
 // add event listeners to the input elements
 input1.addEventListener("input", updateOutput);
 input2.addEventListener("input", updateOutput);
+console.log('button pressed')
 
 // it is used to update output
 function updateOutput() { 
@@ -22,9 +34,9 @@ function updateOutput() {
 }
 
 // getting input elements and cart button
-const value1Input = document.getElementById('triangle-value1');
-const value2Input = document.getElementById('triangle-value2');
-const cartButton = document.getElementById('cart-triangle');
+const value1Input = document.getElementById('rectangle-value1');
+const value2Input = document.getElementById('rectangle-value2');
+const cartButton = document.getElementById('cart-rectangle');
 
 // ad event listener to calculate button
 cartButton.addEventListener('click', function() {
@@ -42,7 +54,7 @@ cartButton.addEventListener('click', function() {
   noCell.innerHTML = rowCount + 1;
 
   const nameCell = row.insertCell(1);
-  nameCell.innerHTML = 'Triangle';
+  nameCell.innerHTML = 'rectangle';
 
   const totalCell = row.insertCell(2);
   totalCell.innerHTML = total;
