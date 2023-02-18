@@ -1,28 +1,50 @@
 <div class="card card-compact w-full bg-base-100 shadow-xl mx-auto mt-5 ">
     <figure class="px-10 pt-10">
-        <img class="fluid" aria-colspan="w-" src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+        <img class="fluid" aria-colspan="w-" src="./images/rectangle.png" alt="Rectangle" class="rounded-xl" />
     </figure>
     <div class="card-body items-center text-center">
-        <h2 id="prallelogram" class="card-title">
-            Prallelogram</h2>
-        <p class="text-xl">Area (A) = <span id="parallelogram-aree1">b</span> x <span id="parallelogram-area2">h</span></p> 
-        <p class="text-xl">b = <span id="parallelogram-aree3">10</span> cm, h = <span id="parallelogram-aree4">12</span> cm
-         
+        <h2 id="rectangle" class="card-title">
+            Rectangle</h2>
+        <p class="text-xl">Area (A) = <span id="rectangle-aree1">w</span> x <span id="rectangle-area2">l</span></p> 
+        <div class="flex gap-2">
+        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="rectangle-value1" placeholder="b"> <span class="font-semibold" >cm</span>
+        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="rectangle-value2" placeholder="b"> <span  class="font-semibold">cm</span>
+    </div>   
         <div class="card-actions mt-8">
-            <button id="cart-parallelogram" class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8 text-white">Calculate</button>
+            <button id="cart-rectangle" class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8 text-white">Calculate</button>
         </div>
     </div>
 </div>
 
-document.getElementById('cart-parallelogram').addEventListener('click', function (e) {
+<!-- Area calculation area started  -->
+<div class=" cart-details  w-full md:w-[30%] lg:w-[30%] mx-auto ">
+    <h1 class="text-3xl text-center font-bold underline  mt-5">Area calculation</h1>
 
-    // get data from html using ID
-    const geometryName = e.target.parentNode.parentNode.children[0].innerText;
-    const geometryValue1 = e.target.parentNode.parentNode.children[2].children[0].innerText;
-    const geometryValue2 = e.target.parentNode.parentNode.children[3].children[0].innerText;
+    <!-- <button id="cart-one " class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Add to cart</button> -->
 
-    // doing multiplication
-    const totalArea = parseInt(geometryValue1) * parseInt(geometryValue2);
-    displayData(geometryName, geometryValue1, geometryValue2, totalArea)
+    <div class="overflow-x-auto">
+        <table class="table w-full">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Total Area</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="table-container">
+                <!-- row 1
+            <tr>
+              <th>1</th>
+              <td>Cy Ganderton</td>
+              <td>Quality Control Specialist</td>
+              <td><button id="cart-one" class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Convert to</button></td>
+            </tr> -->
 
-})
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
