@@ -32,6 +32,13 @@ cartButton.addEventListener('click', function() {
   const value2 = parseFloat(value2Input.value);
   const total = 0.5 * value1 * value2; 
 
+   // validate input values
+   if (isNaN(value1) || isNaN(value2) || value1 < 0 || value2 < 0) {
+    // show alert if input is not valid
+    alert("Please enter positive numbers for both values");
+    return;
+  }
+
   //area calculation section started
 
   const table = document.getElementById('table-container');
@@ -50,3 +57,43 @@ cartButton.addEventListener('click', function() {
   const actionCell = row.insertCell(3);
   actionCell.innerHTML = '<button class="btn btn-primary bg-cyan-600 border-none hover:bg-blue-500 text-white">Convert to m<sup>2</sup></button>';
 }); 
+
+
+// random background color generate
+
+const cards = document.querySelectorAll('.card-random-bg');
+
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      const randomColor = Math.floor(Math.random()*16777215).toString(16);
+      card.style.backgroundColor = "#" + randomColor;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.backgroundColor = "white";
+    });
+  });
+
+
+
+// // getting input elements and cart button
+// const value1Input = document.getElementById('triangle-value1');
+// const value2Input = document.getElementById('triangle-value2');
+// const cartButton = document.getElementById('cart-triangle');
+
+// // add event listener to calculate button
+// cartButton.addEventListener('click', function() {
+//   // get values from input fields
+//   const value1 = parseFloat(value1Input.value);
+//   const value2 = parseFloat(value2Input.value);
+
+//   // validate input values
+//   if (isNaN(value1) || isNaN(value2) || value1 < 0 || value2 < 0) {
+//     // show alert if input is not valid
+//     alert("Please enter positive numbers for both values");
+//     return;
+//   }
+
+//   // calculate total
+//   const total = 0.5 * value1 * value2; 
+// });
