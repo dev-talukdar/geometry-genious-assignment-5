@@ -18,7 +18,7 @@
     <!-- header section started -->
     <header class="lg:px-12 mt-12">
         <div class="navbar bg-cyan-500 shadow-2xl lg:px-12 rounded-md">
-          
+
             <div class="flex-1 py-8">
                 <div class="text-center">
                     <p class="text-3xl font-bold">Interactive</p>
@@ -30,8 +30,8 @@
             </div>
         </div>
         </div>
-        </div> 
- 
+        </div>
+
 
     </header>
     <!-- header section ended -->
@@ -41,62 +41,162 @@
     <main>
 
         <section class="lg: px-12 flex flex-col md:flex-row lg:flex-row">
-            <div class="grid grid-cols-2">
-            <div class="product-details mt-5 mb-5 w-[80%] grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-6 bg-slate-500">
 
-                <div class="card card-compact w-full bg-base-100 shadow-xl mx-auto mt-5 bg-fuchsia-200 ">
+            <div class="product-details mt-5 mb-5 w-[80%] grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-6">
+                <!-- card -1  -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl mx-auto mt-5 ">
                     <figure class="px-10 pt-10">
                         <img class="fluid" aria-colspan="w-" src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 id="piano" class="card-title">Triangle</h2>
-                        <p>Area (A) = 0.5 x <span id="">b</span> x <span id="">h</span</p>
-                        <div class="grid grid-cols-2 gap-3">
-                            <input class="bg-slate-300 rounded-sm text-center" type="text" placeholder="b"> 
-                            <input class="bg-slate-300 rounded-sm text-center" type="text" placeholder="h"> 
-                        </div>
-                        <div class="card-actions">
-                            <button id="calculate-one" class="btn btn-primary">Calculate</button>
+                        <h2 id="piano" class="card-title">
+                            Triangle</h2>
+                        <p class="text-xl">Area (A) = 0.5 x <span id="triangle-aree1">b</span> x <span id="triangle-area2">h</span></p> 
+                        <div class="flex gap-2">
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="triangle-value1" placeholder="b"> <span class="font-semibold" >cm</span>
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="triangle-value2" placeholder="b"> <span  class="font-semibold">cm</span>
+                    </div>   
+                        <div class="card-actions mt-8">
+                            <button id="cart-triangle " class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Add to cart</button>
                         </div>
                     </div>
                 </div>
+
+                   <!-- card -2  -->
+                   <div class="card card-compact w-full bg-base-100 shadow-xl mx-auto mt-5 ">
+                    <figure class="px-10 pt-10">
+                        <img class="fluid" aria-colspan="w-" src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="piano" class="card-title">
+                            Rectangle</h2>
+                        <p class="text-xl">Area (A) = 0.5 x <span id="rectangle-aree1">b</span> x <span id="rectangle-area2">h</span></p> 
+                        <div class="flex gap-2">
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="rectangle-value1" placeholder="b"> <span class="font-semibold" >cm</span>
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="rectangle-value2" placeholder="b"> <span  class="font-semibold">cm</span>
+                    </div>   
+                        <div class="card-actions mt-8">
+                            <button id="cart-rectangle " class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                   <!-- card -3  -->
+                   <div class="card card-compact w-full bg-base-100 shadow-xl mx-auto mt-5 ">
+                    <figure class="px-10 pt-10">
+                        <img class="fluid" aria-colspan="w-" src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="piano" class="card-title">
+                            Prallelogram</h2>
+                        <p class="text-xl">Area (A) = 0.5 x <span id="parallelogram-aree1">b</span> x <span id="parallelogram-area2">h</span></p> 
+                        <div class="flex gap-2">
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="parallelogram-value1" placeholder="b"> <span class="font-semibold" >cm</span>
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="parallelogram-value2" placeholder="b"> <span  class="font-semibold">cm</span>
+                    </div>   
+                        <div class="card-actions mt-8">
+                            <button id="cart-parallelogram " class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                   <!-- card -4  -->
+                   <div class="card card-compact w-full bg-base-100 shadow-xl mx-auto mt-5 ">
+                    <figure class="px-10 pt-10">
+                        <img class="fluid" aria-colspan="w-" src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="piano" class="card-title">
+                            Rhombus</h2>
+                        <p class="text-xl">Area (A) = 0.5 x <span id="rhombus-aree1">b</span> x <span id="rhombus-area2">h</span></p> 
+                        <div class="flex gap-2">
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="rhombus-value1" placeholder="b"> <span class="font-semibold" >cm</span>
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="rhombus-value2" placeholder="b"> <span  class="font-semibold">cm</span>
+                    </div>   
+                        <div class="card-actions mt-8">
+                            <button id="cart-rhombus " class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                   <!-- card -5  -->
+                   <div class="card card-compact w-full bg-base-100 shadow-xl mx-auto mt-5 ">
+                    <figure class="px-10 pt-10">
+                        <img class="fluid" aria-colspan="w-" src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="piano" class="card-title">
+                            Pentagon</h2>
+                        <p class="text-xl">Area (A) = 0.5 x <span id="pentagon-aree1">b</span> x <span id="pentagon-area2">h</span></p> 
+                        <div class="flex gap-2">
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="pentagon-value1" placeholder="b"> <span class="font-semibold" >cm</span>
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="pentagon-value2" placeholder="b"> <span  class="font-semibold">cm</span>
+                    </div>   
+                        <div class="card-actions mt-8">
+                            <button id="cart-pentagon " class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                   <!-- card -6  -->
+                   <div class="card card-compact w-full bg-base-100 shadow-xl mx-auto mt-5 ">
+                    <figure class="px-10 pt-10">
+                        <img class="fluid" aria-colspan="w-" src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="piano" class="card-title">
+                            Ellipse</h2>
+                        <p class="text-xl">Area (A) = 0.5 x <span id="ellipse-aree1">b</span> x <span id="ellipse-area2">h</span></p> 
+                        <div class="flex gap-2">
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="ellipse-value1" placeholder="b"> <span class="font-semibold" >cm</span>
+                        <input class="bg-slate-200 rounded-sm text-center py-1" type="text" name="" id="ellipse-value2" placeholder="b"> <span  class="font-semibold">cm</span>
+                    </div>   
+                        <div class="card-actions mt-8">
+                            <button id="cart-ellipse " class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Add to cart</button>
+                        </div>
+                    </div>
+                </div>   
+
+            </div>
             </div>
 
+<!-- Area calculation area started  -->
+            <div class=" cart-details  w-full md:w-[30%] lg:w-[30%] mx-auto ">
+                <h1 class="text-3xl text-center font-bold underline  mt-5">Area calculation</h1>
 
+                <!-- <button id="cart-one " class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Add to cart</button> -->
 
-                <div class=" cart-details  w-full md:w-[30%] lg:w-[30%] mx-auto ">
-                    <h1 class="text-3xl text-center font-bold underline  mt-5">Area Calculation</h1>
-    
-                    <div class="overflow-x-auto">
-                        <table class="table w-full">
-                            <!-- head -->
-                            <thead>
-                                <!-- <tr>
-                                    <th>No</th>
-                                    <th>Nanme</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
-                                </tr> -->
-                            </thead>
-                            <tbody id="table-container">
-                                <!-- row 1
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        <!-- head -->
+                        <thead>
                             <tr>
-                              <th>1</th>
-                              <td>Cy Ganderton</td>
-                              <td>Quality Control Specialist</td>
-                              <td>Blue</td>
-                            </tr> -->
-    
-                            </tbody>
-                        </table>
-                    </div>
-                
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+                            <!-- row 1
+                        <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td><button id="cart-one " class="btn btn-wide bg-cyan-600 border-none hover:bg-blue-500 mb-8">Add to cart</button></td>
+                        </tr> -->
 
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
 
         </section>
 
         <!-- footer section started -->
+
 
         <footer>
 
