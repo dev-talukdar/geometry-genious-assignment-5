@@ -34,7 +34,7 @@ cartButton.addEventListener('click', function() {
 
    // validate input values
    if (isNaN(value1) || isNaN(value2) || value1 < 0 || value2 < 0) {
-    // show alert if input is not valid
+    // Error message
     alert("Please enter positive numbers for both values");
     return;
   }
@@ -72,28 +72,5 @@ const cards = document.querySelectorAll('.card-random-bg');
     card.addEventListener('mouseleave', () => {
       card.style.backgroundColor = "white";
     });
-  });
-
-
-
-// // getting input elements and cart button
-// const value1Input = document.getElementById('triangle-value1');
-// const value2Input = document.getElementById('triangle-value2');
-// const cartButton = document.getElementById('cart-triangle');
-
-// // add event listener to calculate button
-// cartButton.addEventListener('click', function() {
-//   // get values from input fields
-//   const value1 = parseFloat(value1Input.value);
-//   const value2 = parseFloat(value2Input.value);
-
-//   // validate input values
-//   if (isNaN(value1) || isNaN(value2) || value1 < 0 || value2 < 0) {
-//     // show alert if input is not valid
-//     alert("Please enter positive numbers for both values");
-//     return;
-//   }
-
-//   // calculate total
-//   const total = 0.5 * value1 * value2; 
-// });
+  }); 
+  

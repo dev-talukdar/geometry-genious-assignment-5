@@ -2,17 +2,25 @@
 document.getElementById('cart-rectangle').addEventListener('click', function () {
 
     // get data from html using ID 
-
-    const geometryName = document.getElementById('rectangle').innerText;  
-
+    const geometryName = document.getElementById('rectangle').innerText; 
     const geometryValue1 = document.getElementById('rectangle-value1').value; 
-    const geometryValue2 = document.getElementById('rectangle-value2').value;  
+    const geometryValue2 = document.getElementById('rectangle-value2').value;
+
+    // check if inputs are valid
+    if (isNaN(geometryValue1) || isNaN(geometryValue2) || geometryValue1 <= 0 || geometryValue2 <= 0) {
+       // Error message
+        alert("Please enter positive numbers for both values");
+        return;
+    }
+
     // multiply
-    const totalArea = parseInt(geometryValue1) * parseInt(geometryValue2); 
+    const totalArea = parseInt(geometryValue1) * parseInt(geometryValue2);     
 
     // display data to the cart section 
-    displayData(geometryName,totalArea);
+    displayData(geometryName, totalArea);
 })
+
+
 
 // card 3 
 document.getElementById('cart-parallelogram').addEventListener('click', function() {
