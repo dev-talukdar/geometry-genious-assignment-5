@@ -83,18 +83,32 @@ document.getElementById('cart-ellipse').addEventListener('click', function () {
     displayData('Ellipse', area.toFixed(2), a, b);
 }); 
 
-// main function 
+// main function to use for all
+
+// initialize a variable 
 let count = 0;
+
+// function for  showing data in table row 
 function displayData(GeometricName, GeometricArea) {
+
+    // increament the number each time + 1
     count++;
+
+    // getting container element 
     const container = document.getElementById('table-container');
+
+    // create new table row 
     const tr = document.createElement('tr');
+
+    // set the inner HTML
     tr.innerHTML = `
         <td>${count}</td>
         <td>${GeometricName}</td>
         <td>${GeometricArea} cm<sup>2</sup></td> 
         <td><button class="btn btn-primary bg-cyan-600 border-none hover:bg-blue-500 text-white">Convert to m<sup>2</sup></button></td>
     `;
+
+    // add the row to container 
     container.appendChild(tr);
 }
 

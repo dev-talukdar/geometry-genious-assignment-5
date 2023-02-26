@@ -52,14 +52,14 @@ cartButton.addEventListener('click', function () {
     nameCell.innerHTML = 'Triangle';
 
     const totalCell = row.insertCell(2);
-    totalCell.innerHTML = total;
+    totalCell.innerHTML = total ;
 
     const actionCell = row.insertCell(3);
     actionCell.innerHTML = '<button class="btn btn-primary bg-cyan-600 border-none hover:bg-blue-500 text-white">Convert to m<sup>2</sup></button>';
 });
 
 
-// random background color generate
+// random background color generator
 
 const cards = document.querySelectorAll('.card-random-bg');
 
